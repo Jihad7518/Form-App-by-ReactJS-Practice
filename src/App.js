@@ -20,7 +20,7 @@ function App() {
   //   setLastName(event.target.value);
   // }
 
-    const [formData, setFormData] = useState(  {firstName: "", 
+  const [formData, setFormData] = useState(  {firstName: "", 
   lastName: "", email:"", comments:"", isVisible:true, mode:"", favCar:"" } );
 
   // console.log(formData)
@@ -35,7 +35,7 @@ function App() {
     });
   }
 
-   function submitHandler(event) {
+  function submitHandler(event) {
     event.preventDefault();
     //print
     console.log("Finally printing the entireform ka data ........")
@@ -54,7 +54,7 @@ function App() {
           value={formData.firstName}
         />
 
-<br/>
+        <br/>
         <br></br>
 
         <input
@@ -92,7 +92,7 @@ function App() {
           id="isVisible"
           checked={formData.isVisible}
           />
-<label htmlFor='isVisible'>Am I visible ?</label>
+          <label htmlFor='isVisible'>Am I visible ?</label>
 
           <br/>
           <br/>
@@ -107,7 +107,7 @@ function App() {
             id="Online-Mode"
             checked={formData.mode === "Online-Mode"}
           />
-<label htmlFor='Online-mode'>Online Mode</label>
+          <label htmlFor='Online-mode'>Online Mode</label>
 
           <input
             type="radio"
@@ -127,8 +127,7 @@ function App() {
             value={formData.favCar}
             onChange={changeHandler}
           >
-
-              <option value="scarpio">Scarpio</option>
+          <option value="scarpio">Scarpio</option>
           <option value="fartuner">fartuner</option>
           <option value="Tharrr">Tharrr</option>
           <option value="Legender">Legender</option>
@@ -141,5 +140,14 @@ function App() {
          <br/>
          <button>Submit</button>
 
-              
 
+
+
+
+
+      </form>
+    </div>
+  );
+}
+
+export default App;
