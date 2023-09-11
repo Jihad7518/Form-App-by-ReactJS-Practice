@@ -92,6 +92,20 @@ function App() {
           id="isVisible"
           checked={formData.isVisible}
           />
+<label htmlFor='isVisible'>Am I visible ?</label>
 
+          <br/>
+          <br/>
+
+          <fieldset>
+            <legend>Mode:</legend>
+            <input
+            type="radio"
+            onChange={changeHandler}
+            name="mode"
+            value="Online-Mode"
+            id="Online-Mode"
+            checked={formData.mode === "Online-Mode"}
+          />
 
 
