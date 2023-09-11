@@ -75,3 +75,23 @@ function App() {
           value={formData.email}  
           />
 
+<br/><br/>
+        <textarea
+          placeholder='enter your comments here'
+          onChange={changeHandler}
+          name="comments"
+          value={formData.comments}
+         /> 
+         <br/>
+         <br/>
+
+         <input
+          type="checkbox"
+          onChange={changeHandler}
+          name="isVisible"
+          id="isVisible"
+          checked={formData.isVisible}
+          />
+
+
+
