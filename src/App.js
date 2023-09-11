@@ -19,3 +19,18 @@ function App() {
   //   // console.log(event.target.value);
   //   setLastName(event.target.value);
   // }
+
+    const [formData, setFormData] = useState(  {firstName: "", 
+  lastName: "", email:"", comments:"", isVisible:true, mode:"", favCar:"" } );
+
+  // console.log(formData)
+
+  function changeHandler(event) {
+    const {name, value, checked, type} = event.target
+    setFormData(prevFormData => {
+      return {
+        ...prevFormData,
+        [name]: type ==="checkbox" ? checked : value
+      }
+    });
+  }
