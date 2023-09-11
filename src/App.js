@@ -127,5 +127,19 @@ function App() {
             value={formData.favCar}
             onChange={changeHandler}
           >
+
+              <option value="scarpio">Scarpio</option>
+          <option value="fartuner">fartuner</option>
+          <option value="Tharrr">Tharrr</option>
+          <option value="Legender">Legender</option>
+          <option value="Defender">Defender</option>
+
+          </select>
+
+         {/* <input type='submit' value='submit'/> */}
+         <br/>
+         <br/>
+         <button>Submit</button>
+
               
 
