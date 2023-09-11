@@ -54,3 +54,24 @@ function App() {
           value={formData.firstName}
         />
 
+<br/>
+        <br></br>
+
+        <input
+          type="text"
+          placeholder='last name'
+          onChange={changeHandler} 
+          name="lastName" 
+          value={formData.lastName}
+        />
+
+        <br/>
+        <br/>
+        <input
+          type="email"
+          placeholder="Enter your email here"
+          onChange={changeHandler}
+          name="email"
+          value={formData.email}  
+          />
+
