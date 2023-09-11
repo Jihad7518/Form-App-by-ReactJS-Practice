@@ -34,3 +34,23 @@ function App() {
       }
     });
   }
+
+   function submitHandler(event) {
+    event.preventDefault();
+    //print
+    console.log("Finally printing the entireform ka data ........")
+    console.log(formData)
+  }
+
+  return (
+    <div className="App">
+      <form onSubmit={submitHandler}>
+      <br/>
+        <input
+          type="text"
+          placeholder='first name'
+          onChange={changeHandler}  
+          name="firstName"
+          value={formData.firstName}
+        />
+
