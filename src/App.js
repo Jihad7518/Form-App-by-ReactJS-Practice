@@ -107,5 +107,25 @@ function App() {
             id="Online-Mode"
             checked={formData.mode === "Online-Mode"}
           />
+<label htmlFor='Online-mode'>Online Mode</label>
 
+          <input
+            type="radio"
+            onChange={changeHandler}
+            name="mode"
+            value="Offline-Mode"
+            id="Offline-Mode"
+            checked={formData.mode === "Offline-Mode"}
+          />
+          <label htmlFor='Offline-mode'>Offline Mode</label>
+
+          </fieldset>
+          <label htmlFor='favCar'> Tell me your Favourite Car </label>
+          <select
+            name="favCar"
+            id="favCar"
+            value={formData.favCar}
+            onChange={changeHandler}
+          >
+              
 
